@@ -58,7 +58,7 @@ I wanted to create a coding environment that felt personal and unique. Building 
 You can build a standalone .exe using PyInstaller:
 
 ```bash
-pyinstaller --onefile --windowed SpurCppEditor.py
+pyinstaller --onefile --windowed --icon=spurslogo.ico SpurCppEditor.py
 ```
 
 ## How I Use It on My PC
