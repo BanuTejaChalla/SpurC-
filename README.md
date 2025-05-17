@@ -71,6 +71,16 @@ I’ve packaged SpurC++ as a Windows .exe file using PyInstaller, with a custom 
 * Requires gcc or g++ to be installed and added to your system's PATH.
 * This editor does not support advanced language features like IntelliSense or debugging.
 
+## Additional Note (For keyboard shortcuts)
+If you would be interested in having keyboard shortcuts for the buttons, add the following in the `_bind_events()` method:
+```bash
+    self.bind("<Control-s>", lambda e: self.save_file()) 
+    self.bind("<Control-o>", lambda e: self.open_file())
+    self.bind("<Control-r>", lambda e: self.run())
+    self.bind("<Control-R>", lambda e: self.compile())
+```
+You can modify the shortcuts to your convenience.
+
 ## License
 
 This project is released under the MIT License.
