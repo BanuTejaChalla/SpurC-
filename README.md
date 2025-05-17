@@ -2,7 +2,9 @@
 
 ## Overview
 
-SpurC++ is a lightweight and beginner-friendly C/C++ code editor built using Python’s tkinter. It offers syntax highlighting, file operations, a compilation console, and a clean retro-style theme inspired by personal customization preferences.
+SpurC++ is a lightweight, beginner-friendly C/C++ code editor built using Python’s `tkinter`. It features syntax highlighting, basic file operations, a compilation console, and a clean retro-style theme inspired by Tottenham Hotspur, reflecting personal customization preferences.
+
+Please note that SpurC++ is designed for simplicity and learning purposes. It is best suited for small programs and not intended for managing large-scale C/C++ projects.
 
 ## Motivation
 
@@ -60,6 +62,7 @@ You can build a standalone .exe using PyInstaller:
 ```bash
 pyinstaller --onefile --windowed --icon=spurslogo.ico SpurCppEditor.py
 ```
+Note: If using an icon, make sure the file is in `.ico` format. Alternatively, you can modify the code to use Pillow (PIL) to explicitly convert `.png`, `.jpg`, or `.jpeg` images to `.ico` before loading. If you do not wish to use a custom icon, you can skip importing PIL and installing the Pillow library.
 
 ## How I Use It on My PC
 
